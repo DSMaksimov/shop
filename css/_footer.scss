@@ -28,4 +28,10 @@
   
   .footer__right_element {
     margin:  24px 0;
+    background-color: #fff;
+    fill: #222224;
+  }
+  .footer__right_element:hover {
+    background-color: #F16D7F;
+    fill: #fff;
   }
