@@ -68,7 +68,8 @@ a {
 }
 
 .wrap {
-  width: 1140px;
+  width: 100%;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -88,10 +89,34 @@ a {
 
 .header__menu {
   margin-right: 33px;
+  background-color: #222222;
 }
 
 .header__contact {
   margin-right: 33px;
+}
+
+.header__items {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.search {
+  position: relative;
+}
+
+.search__input {
+  margin-top: 4px;
+  margin-left: 15px;
+  padding: 3px;
+  max-height: 29px;
+  max-width: 150px;
+  color: white;
+  background-color: #222222;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .advantage {
@@ -146,7 +171,7 @@ a {
   text-align: center;
 }
 
-.subscribe__block__left {
+.subscribe__block_left {
   margin-top: 97px;
   width: 360px;
   height: 225px;
@@ -216,6 +241,10 @@ a {
   line-height: 17px;
   color: #FFFFFF;
 }
+.subscribe-btn:hover {
+  background-color: #E1E1E1;
+  color: #F16D7F;
+}
 
 .footer__wrap {
   width: 100%;
@@ -247,6 +276,13 @@ a {
 
 .footer__right_element {
   margin: 24px 0;
+  background-color: #fff;
+  fill: #222224;
+}
+
+.footer__right_element:hover {
+  background-color: #F16D7F;
+  fill: #fff;
 }
 
 .intro {
@@ -392,9 +428,37 @@ a {
   list-style-type: none;
   background-color: #F8F8F8;
   margin-bottom: 30px;
+  position: relative;
+}
+.product__pic {
+  margin-bottom: 25px;
+}
+.product__add {
+  top: 0;
+  width: 360px;
+  height: 420px;
+  opacity: 0;
+  background-color: #3a3939;
+  position: absolute;
+}
+.product__add_txt {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 14px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 170px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.product__add:hover {
+  opacity: 0.75;
 }
 .product__title {
-  margin-top: 25px;
   margin-left: 17px;
   margin-right: 17px;
   font-size: 13px;
@@ -406,13 +470,13 @@ a {
   margin-top: 13px;
   margin-left: 17px;
   margin-right: 17px;
+  margin-bottom: 18px;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #5D5D5D;
+  color: #000000;
 }
 .product__price {
-  margin-top: 18px;
   margin-left: 17px;
   margin-right: 17px;
   font-size: 16px;
@@ -432,6 +496,10 @@ a {
   margin-bottom: 95px;
   display: flex;
   text-align: center;
+}
+.product__link:hover {
+  color: white;
+  background-color: #F26376;
 }
 
 .products__filters {
@@ -552,7 +620,6 @@ a {
   color: #F16D7F;
   margin-bottom: 12px;
 }
-
 .collection__hr {
   width: 63px;
   height: 3px;

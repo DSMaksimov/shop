@@ -14,7 +14,32 @@
   
   .header__menu {
     margin-right: 33px;
+    background-color: #222222;
   }
   .header__contact {
     margin-right: 33px;
+  }
+
+  .header__items {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  .search {
+    position: relative;
+  }
+
+  .search__input {
+    // display: none;
+    margin-top: 4px;
+    margin-left: 15px;
+    padding: 3px;
+    max-height: 29px;
+    max-width: 150px;
+    color: white;
+    background-color: #222222;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 10px;
   }

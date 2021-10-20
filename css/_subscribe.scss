@@ -11,7 +11,7 @@
     text-align: center;
   }
   
-  .subscribe__block__left {
+  .subscribe__block_left {
     margin-top: 97px;
     width: 360px;
     height: 225px;
@@ -58,7 +58,7 @@
   
   .subscribe__field {
     padding: 0 22px;
-    background-color: #E1E1E1;;
+    background-color: #E1E1E1;
     border: none;
     border-top-left-radius: 28px;
     border-bottom-left-radius: 28px;
@@ -72,11 +72,15 @@
   
   .subscribe-btn {
     padding: 0 20px;
-    background-color: #F16D7F;;
+    background-color: #F16D7F;
     border: none;
     border-top-right-radius: 28px;
     border-bottom-right-radius: 28px;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+    &:hover {
+      background-color: #E1E1E1;
+      color: #F16D7F;
+    }
   }
