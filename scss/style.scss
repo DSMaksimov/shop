@@ -1,0 +1,717 @@
+@import '_reset.scss';
+@import '_header.scss';
+@import '_advantage.scss';
+@import '_subscribe.scss';
+@import '_footer.scss';
+
+  .intro {
+    background-color: #F1E4E6;
+    &__wrap {
+      background-image: url(../img/intro_img.png);
+      background-repeat: no-repeat;
+      background-position: -225px bottom;
+      height: 764px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &__title {
+      width: 421px;
+      height: 100px;
+      margin-right: 51px;
+      padding-left: 16px;
+      text-transform: uppercase;
+      border-left: 12px solid #F16D7F;
+      // мне показалось, что так удобнее сделать черточку с лева от текста да и кода занимает меньше  
+      font-size: 32px;
+      line-height: 38px;
+      
+      &_big {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+      }
+      &_smol {
+        font-weight: bold;
+      }
+      &_pink {
+        font-weight: bold;
+        color: #F16D7F;
+      }
+    }
+  }
+    
+  .arrivals__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .arrivals__title {
+    margin: 60px 0;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+  }
+  
+  .breadcrumb {
+    margin: 65px 0;
+    display: flex;
+    &__item {
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #636363;
+    }
+    &__active {
+      cursor: pointer;
+      color: #F16D7F;
+    }
+  }
+  
+  .categories__wrap {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+  }
+  
+  .categories__item {
+    width: 360px;
+    height: 260px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    &_text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+    }
+    &_women {
+      background-image: url(../img/cat_women.jpg);
+    }
+    &_men {
+      background-image: url(../img/cat_men.jpg);
+    }
+    &_kids {
+      background-image: url(../img/cat_kids.jpg);
+    }
+    &_accs {
+      width: 100%;
+      height: 180px;
+      margin-top: 30px;
+      background-image: url(../img/cat_accs.jpg);
+    }
+  }
+  .categories__decor {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+  }
+  .products__title {
+    margin-top: 25px;
+    margin-bottom: 13px;
+    margin-left: 18px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .products__description {
+    margin-top: 6px;
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+  }
+
+  .products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  .product {
+    width: 360px;
+    height: 580px;
+    list-style-type: none;
+    background-color: #F8F8F8;
+    margin-bottom: 30px;
+    position: relative;
+
+    &__pic {
+      margin-bottom: 25px;
+    }
+
+    &__add {
+      top: 0;
+      width: 360px;
+      height: 420px;
+      opacity: 0;
+      background-color: rgb(58, 57, 57);
+      position: absolute;
+    }
+
+    &__add_txt {
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      padding: 14px;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 170px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      font-size: 14px;
+      line-height: 17px; 
+    }
+
+    &__add:hover {
+      opacity: 0.75;
+    }
+
+    &__title {
+      margin-left: 17px;
+      margin-right: 17px;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000000;
+      text-transform: uppercase;
+    }
+    &__text {
+      margin-top: 13px;
+      margin-left: 17px;
+      margin-right: 17px;
+      margin-bottom: 18px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+    &__price {
+      margin-left: 17px;
+      margin-right: 17px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #F16D7F;
+    }
+    &__link {
+      width: 225px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #F26376;
+      border: solid #F26376;
+      padding: 15px 40px;
+      margin-top: 13px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 95px;
+      display: flex;
+      text-align: center;
+      &:hover {
+        color: white;
+        background-color: #F26376;
+      }
+    }
+  }
+  
+  
+  .products__filters {
+    width: 690px;
+    margin-top: 50px;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter__btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  .filter__nav {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+  }
+  
+  .filter__nav_btn {
+    margin-right: 28px;
+  }
+
+  .products__paginations {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 96px;
+  }  
+  .products__pagination {
+    width: 285px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+  }
+
+  .product__slider {
+    margin-bottom: 100px;
+  }
+  
+  .bg__slide {
+    width: 100%;
+    height: 777px;
+    background-color: #F7F7F7;
+  }
+
+  .slider {
+  display: flex;  
+  }
+
+  .button__left {
+    color: #000000;
+    position: absolute;
+    left: 0px;
+  }
+  .button__left:hover {
+    color: #F16D7F;
+  }
+
+  .slider__img {
+    display: flex;
+    margin: auto;  
+  }
+
+  .button__right {
+    color: #000000;
+    position: absolute;
+    right: 0px;
+    transform: rotate(180deg);
+  }
+
+  .button__right:hover {
+    color: #F16D7F;
+  }
+
+  .pagination__arrow_left {
+    text-decoration: none;
+  }  
+  .pagination__arrow_right {
+    text-decoration: none;
+  }  
+  .pagination__item {
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .page__product_products {
+    margin-bottom: 128px;
+  }
+
+  .product__info {
+    position: relative;
+    top: -35px;
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+  }
+
+  .collection{
+    margin-top: 65px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-bottom: 12px;
+    &__hr {
+      margin-top: 65px;
+      width: 63px;
+      height: 3px;
+      background-color:  #F16D7F; 
+    }
+  }
+  
+  .product__name {
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+  }
+  .product__focus_description {
+    width: 555px;
+  }
+  .product__description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    margin-bottom: 32px;
+  }
+  .product__focus_price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F; 
+    margin-bottom: 126px;
+  }
+  .focus__price_hr {
+    width: 642px;
+    height: 1px;
+    background-color: #F16D7F; 
+    margin-bottom: 65px;
+  }
+
+  .product__filter_nav {
+    display: flex;
+    margin-bottom: 48px;
+  }
+
+  .card {
+    margin-top: 96px;
+  }
+
+  .card__area {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  .area__wares_content {
+    position: relative;
+  }
+
+  .area__wares_close {
+    position: absolute;
+    top: 28px;
+    right: 22px;
+    background-color: #FFFFFF;
+  }
+
+  .area__wares_item {
+    width: 652px;
+    height: 306px;
+    margin-bottom: 40px;
+    background-color: #FFFFFF;;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    display: flex;
+  }
+
+  .area__wares_img {
+    width: 262px;
+    height: 306px;
+    margin-right: 31px;
+  }
+
+  .area__wares_heading {
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    padding-top: 22px;
+    margin-bottom: 36px;
+  }
+
+  .area__wares_margin {
+    margin: 6px 0 6px;
+  }
+
+  .area__wares_price {
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+  }
+
+  .wares__price_span {
+    font-size: 22px;
+    line-height: 26px;
+    color: #EF5B70;
+  }
+
+  .area__wares_color {
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+  }
+
+  .area__wares_size {
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+  }
+  
+  .area__wares_quantity {
+    display: flex;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+  .area__wares_number {
+    width: 44px;
+    height: 25px;
+    margin-left: 24px;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+  }
+
+  .area__execution_buyer {
+    margin-top: 17px;
+    width: 360px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+
+  .area__execution_buyer {
+    margin-bottom: 20px;  
+  }
+
+  .form__page_cart {
+    width: 360px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #B1B1B1;
+    margin-bottom: 20px;
+    padding-left: 17px;
+  }
+
+  .form__postcode {
+    margin-bottom: 23px;
+  }
+
+  .form__get {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #B1B1B1;
+    margin-bottom: 57px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+  }
+
+
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  .checkout {
+    width: 360px;
+    height: 214px;
+    background-color: #F5F3F3;
+    position: relative;
+  }
+
+  .checkout__sub {
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    top: 39px;
+    right: 34px;
+  }
+
+  .checkout__grand {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-right: 3px;
+    top: 64px;
+    right: 37px;
+  }
+
+  .grand__total {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+  }
+
+  .checkout__hr {
+    background-color: #E2E2E2;
+    width: 275px;
+    height: 1px;
+    top: 104px;
+    right: 42px;
+  }
+
+  .proceed {
+    width: 273px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    top: 122px;
+    right: 43px;
+  }
+
+  .checkout__right {
+    position: absolute;
+  }
+
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+  .card__btn {
+    margin-top: 32px;
+    margin-bottom: 128px;
+    display: flex;
+  }
+
+  .card__btn_clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 50px;
+    color: #B1B1B1;
+    background-color: #FFFFFF;
+    border: 1px solid #B1B1B1;
+  }
+
+  .card__btn_continue {
+    margin-left: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 50px;
+    color: #B1B1B1;
+    background-color: #FFFFFF;
+    border: 1px solid #B1B1B1;
+  }
+
+
+
+
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  
+  .registration {
+    margin-top: 64px;
+  }
+
+  .registration__field {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .registration__field_left {
+    width: 360px;
+  }
+
+  .registration__field_fcs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .registration__field_text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+
+  .registration__field_inpet {
+    width: 360px;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+    padding: 13px 17px;
+  }
+
+  .registration__field_radio {
+    display: flex;
+    margin-top: 33px;
+    gap: 10px;
+  }
+  
+  .registration__field_gender {
+    width: 17px;
+    height: 17px;
+    
+  }
+
+  .registration__field_male {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+  }
+
+
+  .registration__field_mail {
+    margin: 0;
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .registration__field_translucent {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-bottom: 33px;
+  }
+
+
+  
+
+
+
+
+  .registration__field_right {
+    width: 652px;
+  }
+
+  .registration__field_header {
+    margin-bottom: 22px;
+  }
+
+  .registration__field_text {
+    margin-bottom: 22px;
+  }
+
+  .registration__field_items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .loyality__text{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }

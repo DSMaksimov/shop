@@ -1,0 +1,38 @@
+.advantage {
+    padding: 105px 0;
+    background-color: #222224;
+  }
+  
+  .advantage__wrap {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .advantage__element {
+    width: 360px;
+    height: 136px;
+    color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .advantage__img {
+    height: 33px;
+  }
+  
+  .advantage__img_gear {
+    height: 40px;
+  }
+  
+  .advantage__heading {
+    font-size: 19.96px;
+    line-height: 24px;
+  }
+  
+  .advantage__text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+  }
