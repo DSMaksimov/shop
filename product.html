@@ -16,11 +16,10 @@
 <body>
     <header class="header ">
         <div class="header__wrap wrap">
-            <!-- как вариант можно заменить на ul и переименовать в header__block -->
             <div class="header__items">
-                <a href="index.html" class="logo header__item"><img src="img/logo.svg" alt="logo"></a>
+                <a class="logo header__item"><img src="img/logo.svg" alt="logo"></a>
                 <div class="search">
-                    <form action="#" class="header__item">
+                    <form action="#" class="header__item__form">
                         <label for="search-btn" class="search__btn">
                             <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -29,23 +28,21 @@
                             </svg>
                         </label>
                         <input id="search-btn" type="search" class="search__input">
-                        <!-- не понимаю как стилизовать поле ввода (почему-то не получается задать стиль элементу так что бы он соответствовал размеру картинки не был больше либо меньше, у меня получается так что даже при убранных отступах поля лейбл, всё равно поле становится не ровно и либо слишком маленкой высоты либо слишком сильно раздувает поле header) -->
                     </form>
                 </div>
             </div>
             <div class="header__items">
-                <div>
-
+                <a href="#">
                     <button class="header__menu header__item">
-
-                        <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
-                                fill="#E8E8E8" />
-                        </svg>
-
+                        <figure>
+                            <svg width="32" height="23" viewBox="0 0 32 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
+                                    fill="#E8E8E8" />
+                            </svg>
+                        </figure>
                     </button>
-                    <!-- так же у меня не выходит корректный вид меню (если убрать комментарий вы увидите что происходит, почему-то появляется задний фон, у меня гдето в коде ошибка но я не могу понять где, причем если поменять button на div картинка становится нормальной, помогите разобраться пожалуйста) -->
-                </div>
+                </a>
                 <a href="registration.html">
                     <div>
                         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -82,106 +79,114 @@
             </div>
         </div>
     </section>
-    <section class="product__slider">
-        <div class="bg__slide">
-            <div class="slider">
-                <button><img src="img/arrow__left.svg" alt="arrow__left" class="button__left"></button>
-                <img src="img/product__women.png" alt="img women" class="slider__img">
-                <button><img src="img/arrow__left.svg" alt="arrow__right" class="button__right"></button>
-            </div>
-        </div>
-        <div class="product__info">
-            <h3 class="collection">WOMEN COLLECTION</h3>
-            <div class="collection__hr"></div>
-            <!-- <hr class="collection__hr"> -->
-            <h2 class="product__name">MOSCHINO CHEAP AND CHIC</h2>
-            <div class="product__focus_description">
-                <p class="product__description">Compellingly actualize fully researched processes before proactive
-                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
-                    Completely visualize parallel core competencies rather than exceptional portals. </p>
-            </div>
-            <p class="product__focus_price">$561</p>
-            <div class="focus__price_hr"></div>
-            <!-- <hr class="focus__price_hr"> -->
-            <div class="product__filter_nav">
-                <div class="product__filetr_btn_trend filter__nav_btn">CHOOSE COLOR <img src="img/arrow_down.svg"
-                        alt="arrow_down">
-                </div>
-                <div class="product__filetr_btn_size filter__nav_btn">CHOOSE SIZE <img src="img/arrow_down.svg"
-                        alt="arrow_down"></div>
-                <div class="product__filetr_btn_price">QUANTITY <img src="img/arrow_down.svg" alt="arrow_down">
+    <main>
+        <section class="product__slider">
+            <div class="bg__slide">
+                <div class="slider">
+                    <button><img src="img/arrow__left.svg" alt="arrow__left" class="button__left"></button>
+                    <img src="img/product__women.png" alt="img women" class="slider__img">
+                    <button><img src="img/arrow__left.svg" alt="arrow__right" class="button__right"></button>
                 </div>
             </div>
-            <a href="catalog.html" class="product__link"><img src="img/basket.svg" alt="basket">Add to Cart</a>
-        </div>
+            <div class="product__info">
+                <h3 class="collection">WOMEN COLLECTION</h3>
+                <div class="collection__hr"></div>
+                <!-- <hr class="collection__hr"> -->
+                <h2 class="product__name">MOSCHINO CHEAP AND CHIC</h2>
+                <div class="product__focus_description">
+                    <p class="product__description">Compellingly actualize fully researched processes before proactive
+                        outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                        Completely visualize parallel core competencies rather than exceptional portals. </p>
+                </div>
+                <p class="product__focus_price">$561</p>
+                <div class="focus__price_hr"></div>
+                <!-- <hr class="focus__price_hr"> -->
+                <div class="product__filter_nav">
+                    <div class="product__filetr_btn_trend filter__nav_btn">CHOOSE COLOR <img src="img/arrow_down.svg"
+                            alt="arrow_down">
+                    </div>
+                    <div class="product__filetr_btn_size filter__nav_btn">CHOOSE SIZE <img src="img/arrow_down.svg"
+                            alt="arrow_down"></div>
+                    <div class="product__filetr_btn_price">QUANTITY <img src="img/arrow_down.svg" alt="arrow_down">
+                    </div>
+                </div>
+                <a href="catalog.html" class="product__link"><img src="img/basket.svg" alt="basket"
+                        class="product__basket">Add to Cart</a>
+            </div>
 
-    </section>
-    <section class="products page__product_products wrap">
-        <div class="products__wrap wrap">
-            <ul class="products__list">
-                <li class="product">
-                    <img src="img/cont_1.jpg" alt="" class="product_pic">
-                    <h3 class="product__title">ELLERY X M'O CAPSULE</h3>
-                    <p class="product__text">Known for her sculptural takes on traditional tailoring,
-                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product__price">$52.00</p>
-                </li>
-                <li class="product">
-                    <img src="img/cont_7.jpg" alt="" class="product_pic">
-                    <h3 class="product__title">ELLERY X M'O CAPSULE</h3>
-                    <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product__price">$52.00</p>
-                </li>
-                <li class="product">
-                    <img src="img/cont_8.jpg" alt="" class="product_pic">
-                    <h3 class="product__title">ELLERY X M'O CAPSULE</h3>
-                    <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product__price">$52.00</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+        </section>
+        <section class="products page__product_products wrap">
+            <div class="products__wrap wrap">
+                <ul class="products__list">
+                    <li class="product">
+                        <img src="img/cont_1.jpg" alt="" class="product_pic">
+                        <h3 class="product__title">ELLERY X M'O CAPSULE</h3>
+                        <p class="product__text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="product__price">$52.00</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/cont_7.jpg" alt="" class="product_pic">
+                        <h3 class="product__title">ELLERY X M'O CAPSULE</h3>
+                        <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="product__price">$52.00</p>
+                    </li>
+                    <li class="product">
+                        <img src="img/cont_8.jpg" alt="" class="product_pic">
+                        <h3 class="product__title">ELLERY X M'O CAPSULE</h3>
+                        <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="product__price">$52.00</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="advantage">
-        <div class="wrap">
-            <div class="advantage__wrap">
-                <div class="advantage__element">
-                    <img src="img/advantage_1.svg" alt="advantage_1" class="advantage__img">
-                    <h3 class="advantage__heading">Free Delivery</h3>
-                    <p class="advantage__text">Worldwide delivery on all. Authorit tively morph<br>next-generation innov
-                        tion with extensive models.</p>
-                </div>
-                <div class="advantage__element">
-                    <img src="img/advantage_2.svg" alt="advantage_2" class=" advantage__img_gear">
-                    <h3 class="advantage__heading">Sales & discounts</h3>
-                    <p class="advantage__text">Worldwide delivery on all. Authorit tively
-                        morph<br>next-generation innov
-                        tion with extensive models.</p>
-                </div>
-                <div class="advantage__element">
-                    <img src="img/advantage_3.svg" alt="advantage_3" class="advantage__img">
-                    <h3 class="advantage__heading">Quality assurance</h3>
-                    <p class="advantage__text">Worldwide delivery on all. Authorit tively morph<br>next-generation innov
-                        tion with extensive models.</p>
+        <section class="advantage">
+            <div class="wrap">
+                <div class="advantage__wrap">
+                    <div class="advantage__element">
+                        <img src="img/advantage_1.svg" alt="advantage_1" class="advantage__img">
+                        <h3 class="advantage__heading">Free Delivery</h3>
+                        <p class="advantage__text">Worldwide delivery on all. Authorit tively morph<br>next-generation
+                            innov
+                            tion with extensive models.</p>
+                    </div>
+                    <div class="advantage__element">
+                        <img src="img/advantage_2.svg" alt="advantage_2" class=" advantage__img_gear">
+                        <h3 class="advantage__heading">Sales & discounts</h3>
+                        <p class="advantage__text">Worldwide delivery on all. Authorit tively
+                            morph<br>next-generation innov
+                            tion with extensive models.</p>
+                    </div>
+                    <div class="advantage__element">
+                        <img src="img/advantage_3.svg" alt="advantage_3" class="advantage__img">
+                        <h3 class="advantage__heading">Quality assurance</h3>
+                        <p class="advantage__text">Worldwide delivery on all. Authorit tively morph<br>next-generation
+                            innov
+                            tion with extensive models.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <section class="subscribe">
         <div class="subscribe__wrap">
             <div class="wrap">
                 <div class="subscribe__block">
-                    <div class="subscribe__block__left">
-                        <img src="img/subscribe__img.svg" alt="subscribe__img" class="subscribe__block__img">
+                    <div class="subscribe__block_left">
+                        <figure><img src="img/subscribe__img.svg" alt="subscribe__img" class="subscribe__block__img">
+                        </figure>
                         <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque<br>viverra nunc mi, a
                             pulvinar purus<br> condimentum“</p>
                     </div>
                     <div class="subscribe__block_right">
-                        <h3 class="subscribe__title"><span class="subscribe__span_title">SUBSCRIBE</span><br><span
-                                class="subscribe__span_text">FOR OUR NEWLETTER AND PROMOTION</span></h3>
+                        <h3 class="subscribe__title"><span class="subscribe__span_title">Subscribe</span><br><span
+                                class="subscribe__span_text">For our newletter and promotion</span></h3>
                         <form action="#" class="subscribe__form">
                             <input class="subscribe__field" type="email" minlength="6" placeholder="Enter Your Email"
                                 required>

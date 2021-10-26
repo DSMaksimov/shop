@@ -1,0 +1,36 @@
+.intro {
+    background-color: #F1E4E6;
+    &__wrap {
+      background-image: url(../img/intro_img.png);
+      background-repeat: no-repeat;
+      background-position: -225px bottom;
+      height: 764px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &__title {
+      width: 421px;
+      height: 100px;
+      margin-right: 51px;
+      padding-left: 16px;
+      text-transform: uppercase;
+      border-left: 12px solid #F16D7F;
+      // мне показалось, что так удобнее сделать черточку с лева от текста да и кода занимает меньше  
+      font-size: 32px;
+      line-height: 38px;
+      
+      &_big {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+      }
+      &_smol {
+        font-weight: bold;
+      }
+      &_pink {
+        font-weight: bold;
+        color: #F16D7F;
+      }
+    }
+  }

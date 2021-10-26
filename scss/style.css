@@ -21,6 +21,10 @@ button, input, textarea {
   text-transform: none;
   cursor: pointer; }
 
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
 .fas, input, svg {
   cursor: pointer; }
 
@@ -66,33 +70,30 @@ a {
   justify-content: space-between;
   padding: 18px 0; }
 
-.logo {
+.logo, .header__contact, .header__menu {
   margin-right: 33px; }
 
 .header__menu {
-  margin-right: 33px;
   background-color: #222222; }
-
-.header__contact {
-  margin-right: 33px; }
 
 .header__items {
   display: flex;
   text-align: center;
   align-items: center; }
 
+.header__item__form {
+  display: flex;
+  align-items: center; }
+
 .search {
   position: relative; }
 
 .search__input {
-  margin-top: 4px;
   margin-left: 15px;
   padding: 3px;
-  max-height: 29px;
   max-width: 150px;
   color: white;
   background-color: #222222;
-  position: absolute;
   border: 1px solid white;
   border-radius: 10px;
   opacity: 0; }
@@ -130,7 +131,6 @@ a {
   line-height: 17px; }
 
 .subscribe__wrap {
-  height: 448px;
   background-image: url(../img/subscribe.jpg);
   background-size: cover; }
 
@@ -138,10 +138,11 @@ a {
   display: flex;
   justify-content: space-between;
   justify-content: flex-end;
-  text-align: center; }
+  text-align: center;
+  align-items: center;
+  padding: 97px 0; }
 
 .subscribe__block_left {
-  margin-top: 97px;
   width: 360px;
   height: 225px; }
 
@@ -152,7 +153,6 @@ a {
   margin: 0; }
 
 .subscribe__block_right {
-  margin-top: 150px;
   width: 557px;
   color: #222224; }
 
@@ -264,37 +264,6 @@ a {
       font-weight: bold;
       color: #F16D7F; }
 
-.arrivals__wrap {
-  display: flex;
-  justify-content: space-between; }
-
-.arrivals__title {
-  margin: 60px 0;
-  font-size: 24px;
-  line-height: 29px;
-  color: #F16D7F; }
-
-.breadcrumb {
-  margin: 65px 0;
-  display: flex; }
-  .breadcrumb__item {
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363; }
-  .breadcrumb__active {
-    cursor: pointer;
-    color: #F16D7F; }
-
-.categories__wrap {
-  margin-top: 65px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
-  text-transform: uppercase; }
-
 .categories__item {
   width: 360px;
   height: 260px;
@@ -327,6 +296,14 @@ a {
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F; }
+
+.categories__wrap {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  text-transform: uppercase; }
 
 .products__title {
   margin-top: 25px;
@@ -411,14 +388,31 @@ a {
     border: solid #F26376;
     padding: 15px 40px;
     margin-top: 13px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 95px;
     display: flex;
-    text-align: center; }
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
     .product__link:hover {
       color: white;
       background-color: #F26376; }
+  .product__basket {
+    padding-right: 10px; }
+
+.products__paginations {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 96px; }
+
+.products__pagination {
+  width: 285px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #EBEBEB;
+  border-radius: 2px; }
+
+.product__slider {
+  margin-bottom: 100px; }
 
 .products__filters {
   width: 690px;
@@ -496,6 +490,31 @@ a {
   padding: 6px;
   text-align: center;
   text-decoration: none; }
+
+.arrivals__wrap {
+  display: flex;
+  justify-content: space-between; }
+
+.arrivals__title {
+  margin: 60px 0;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F; }
+
+.breadcrumb {
+  margin: 65px 0;
+  display: flex; }
+  .breadcrumb__item {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363; }
+  .breadcrumb__active {
+    cursor: pointer;
+    color: #F16D7F; }
+  .breadcrumb :hover {
+    font-size: 26px; }
 
 .page__product_products {
   margin-bottom: 128px; }
@@ -583,6 +602,8 @@ a {
   background-color: #FFFFFF;
   filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
   display: flex; }
+  .area__wares_item :hover {
+    cursor: pointer; }
 
 .area__wares_img {
   width: 262px;

@@ -3,43 +3,13 @@
 @import '_advantage.scss';
 @import '_subscribe.scss';
 @import '_footer.scss';
+@import '_block__intro.scss';
+@import '_block__categories.scss';
+@import '_block__products.scss';
+@import '_block__filter.scss';
+@import '_block__paginations.scss';
 
-  .intro {
-    background-color: #F1E4E6;
-    &__wrap {
-      background-image: url(../img/intro_img.png);
-      background-repeat: no-repeat;
-      background-position: -225px bottom;
-      height: 764px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-    }
-    &__title {
-      width: 421px;
-      height: 100px;
-      margin-right: 51px;
-      padding-left: 16px;
-      text-transform: uppercase;
-      border-left: 12px solid #F16D7F;
-      // мне показалось, что так удобнее сделать черточку с лева от текста да и кода занимает меньше  
-      font-size: 32px;
-      line-height: 38px;
-      
-      &_big {
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 58px;
-      }
-      &_smol {
-        font-weight: bold;
-      }
-      &_pink {
-        font-weight: bold;
-        color: #F16D7F;
-      }
-    }
-  }
+
     
   .arrivals__wrap {
     display: flex;
@@ -67,251 +37,17 @@
       cursor: pointer;
       color: #F16D7F;
     }
-  }
-  
-  .categories__wrap {
-    margin-top: 65px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-    text-transform: uppercase;
-  }
-  
-  .categories__item {
-    width: 360px;
-    height: 260px;
-    background-color: #F8F8F8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    &_text {
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 19px;
-      color: #FFFFFF;
-      text-transform: uppercase;
-    }
-    &_women {
-      background-image: url(../img/cat_women.jpg);
-    }
-    &_men {
-      background-image: url(../img/cat_men.jpg);
-    }
-    &_kids {
-      background-image: url(../img/cat_kids.jpg);
-    }
-    &_accs {
-      width: 100%;
-      height: 180px;
-      margin-top: 30px;
-      background-image: url(../img/cat_accs.jpg);
-    }
-  }
-  .categories__decor {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    color: #F16D7F;
-  }
-  .products__title {
-    margin-top: 25px;
-    margin-bottom: 13px;
-    margin-left: 18px;
-    text-align: center;
-    font-size: 30px;
-    line-height: 36px;
-  }
-  .products__description {
-    margin-top: 6px;
-    margin-bottom: 48px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    color: #9F9F9F;
-  }
-
-  .products__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-left: 0;
-  }
-  .product {
-    width: 360px;
-    height: 580px;
-    list-style-type: none;
-    background-color: #F8F8F8;
-    margin-bottom: 30px;
-    position: relative;
-
-    &__pic {
-      margin-bottom: 25px;
-    }
-
-    &__add {
-      top: 0;
-      width: 360px;
-      height: 420px;
-      opacity: 0;
-      background-color: rgb(58, 57, 57);
-      position: absolute;
-    }
-
-    &__add_txt {
-      color: #FFFFFF;
-      border: 1px solid #FFFFFF;
-      padding: 14px;
-      display: flex;
-      margin: 0 auto;
-      margin-top: 170px;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      width: 140px;
-      font-size: 14px;
-      line-height: 17px; 
-    }
-
-    &__add:hover {
-      opacity: 0.75;
-    }
-
-    &__title {
-      margin-left: 17px;
-      margin-right: 17px;
-      font-size: 13px;
-      line-height: 16px;
-      color: #000000;
-      text-transform: uppercase;
-    }
-    &__text {
-      margin-top: 13px;
-      margin-left: 17px;
-      margin-right: 17px;
-      margin-bottom: 18px;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 17px;
-      color: #000000;
-    }
-    &__price {
-      margin-left: 17px;
-      margin-right: 17px;
-      font-size: 16px;
-      line-height: 19px;
-      color: #F16D7F;
-    }
-    &__link {
-      width: 225px;
-      font-size: 16px;
-      line-height: 19px;
-      color: #F26376;
-      border: solid #F26376;
-      padding: 15px 40px;
-      margin-top: 13px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 95px;
-      display: flex;
-      text-align: center;
-      &:hover {
-        color: white;
-        background-color: #F26376;
-      }
+    :hover {
+      font-size: 26px;
     }
   }
   
   
-  .products__filters {
-    width: 690px;
-    margin-top: 50px;
-    margin-bottom: 65px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .filter__btn {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-  }
-  .filter__nav {
-    display: flex;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-  }
   
-  .filter__nav_btn {
-    margin-right: 28px;
-  }
-
-  .products__paginations {
-    display: flex;
-    justify-content: center;
-    margin: 30px auto 96px;
-  }  
-  .products__pagination {
-    width: 285px;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #EBEBEB;
-    border-radius: 2px;
-  }
-
-  .product__slider {
-    margin-bottom: 100px;
-  }
+ 
   
-  .bg__slide {
-    width: 100%;
-    height: 777px;
-    background-color: #F7F7F7;
-  }
 
-  .slider {
-  display: flex;  
-  }
-
-  .button__left {
-    color: #000000;
-    position: absolute;
-    left: 0px;
-  }
-  .button__left:hover {
-    color: #F16D7F;
-  }
-
-  .slider__img {
-    display: flex;
-    margin: auto;  
-  }
-
-  .button__right {
-    color: #000000;
-    position: absolute;
-    right: 0px;
-    transform: rotate(180deg);
-  }
-
-  .button__right:hover {
-    color: #F16D7F;
-  }
-
-  .pagination__arrow_left {
-    text-decoration: none;
-  }  
-  .pagination__arrow_right {
-    text-decoration: none;
-  }  
-  .pagination__item {
-    padding: 6px;
-    text-align: center;
-    text-decoration: none;
-  }
+ 
 
   .page__product_products {
     margin-bottom: 128px;
@@ -412,6 +148,9 @@
     background-color: #FFFFFF;;
     filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
     display: flex;
+    :hover {
+      cursor: pointer;
+    }
   }
 
   .area__wares_img {
