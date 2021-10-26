@@ -1,0 +1,23 @@
+.products__filters {
+  width: 690px;
+  margin-top: 50px;
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.filter__btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  .filter__nav {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+  }
+  
+  .filter__nav_btn {
+    margin-right: 28px;
+  }
